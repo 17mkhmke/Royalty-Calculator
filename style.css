@@ -1,0 +1,62 @@
+/* body{
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+} */
+#container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px gold;
+
+}
+#del{
+    background-color: red;
+    color: blue;
+}
+#del:hover{
+    background-color: blue;
+    color: red;
+}
+#clearall{
+    background-color: blue;
+    color: red;
+}
+#clearall:hover{
+    background-color: red;
+    color: blue;
+}
+#display {
+    text-align: right;
+    height: 70px;
+    line-height:70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    border-style: double;
+    border-color: gold;
+    border-width: 5px;
+}
+.buttons {
+    display: grid;
+    border-bottom: 1px solid gold;
+    border-left: 1px solid goldenrod;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid gold;
+    border-right: 1px solid goldenrod;
+}
+.button {
+    border: 0.5px solid gold;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equals {
+    background-color: rgb(14, 6, 82);
+    color: white;
+}
+.button:hover {
+    background-color: black;
+    color: gold;
+    transition: 0.5s ease-in-out;
+}
+
