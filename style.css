@@ -8,30 +8,38 @@
 
 }
 #del{
-    background-color: red;
-    color: blue;
+    background-color: black;
+    color: gold;
 }
 #del:hover{
-    background-color: blue;
-    color: red;
+    background-color: gold;
+    color: black;
 }
 #clearall{
-    background-color: blue;
-    color: red;
+    background-color: black;
+    color: gold;
 }
 #clearall:hover{
-    background-color: red;
-    color: blue;
+    background-color: gold;
+    color: black;
 }
 #display {
     text-align: right;
     height: 70px;
     line-height:70px;
     padding: 16px 8px;
-    font-size: 25px;
-    border-style: double;
-    border-color: gold;
-    border-width: 5px;
+    font-size: 30px;
+    border-style:solid;
+    border-color: black;
+    border-width: 3px;
+    color: black;
+}
+.crown{
+    width: 4rem;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .buttons {
     display: grid;

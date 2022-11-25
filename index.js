@@ -1,5 +1,16 @@
 let display = document.getElementById('display');
+let operator = document.getElementById('operator');
+let dot = document.getElementById('decimal')
 let buttons = Array.from(document.getElementsByClassName('button'));
+let decimalClick = true;
+dot.addEventListener("click", (e) =>{
+    if(decimalClick) {
+        let display = document.getElementById('decimal').innerText;
+        display.button += dot.textContent;
+        decimalClick= false;
+    }
+})
+
 buttons.map( button => {
     button.addEventListener('click', (e) => {
         switch(e.target.innerText){
@@ -8,7 +19,7 @@ buttons.map( button => {
                 break;
             case 'DEL':
                  if(display.innerText){
-                    display.innerText = display.innerText.slice(0, -1); /*delete*/
+                    display.innerText = display.innerText.slice(0, -1); /*backspace*/
                  }
                     break;
             case '=':
@@ -20,3 +31,5 @@ buttons.map( button => {
    
     });
 });
+
+
