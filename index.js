@@ -15,7 +15,7 @@ buttons.map( button => {
     button.addEventListener('click', (e) => {
         switch(e.target.innerText){
             case 'CA':                          /*clear All*/
-                display.innerText = '0';
+                display.innerText = '';
                 decimalClick=true;
                 break;
             case 'DEL':
@@ -39,12 +39,27 @@ buttons.map( button => {
                 break;
             case '.':
                 if((decimalClick)){
-                    
-                    
+                              
                     display.innerText += e.target.innerText;
                     decimalClick= false;
                 }
                 break;
+            case '+':
+                display.innerText += e.target.innerText;
+                decimalClick = true;
+            break;
+            case '-':
+                display.innerText += e.target.innerText;
+                decimalClick = true;
+            break;
+            case '*':
+                display.innerText += e.target.innerText;
+                decimalClick = true;
+            break;
+            case '/':
+                display.innerText += e.target.innerText;
+                decimalClick = true;
+            break;
             default:
                 display.innerText += e.target.innerText;
                 // decimalClick = true;
@@ -53,8 +68,6 @@ buttons.map( button => {
    
     });
 });
-function validate(entry) {
 
-}
 
 

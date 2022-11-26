@@ -59,8 +59,12 @@
     cursor: pointer;
 }
 #equals {
-    background-color: rgb(14, 6, 82);
-    color: white;
+    background-color: black;
+    color: gold;
+}
+#equals:hover {
+    background-color: gold;
+    color: black;
 }
 .button:hover {
     background-color: black;
